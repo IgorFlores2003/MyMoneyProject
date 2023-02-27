@@ -1,0 +1,56 @@
+.Receita{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:oblique;
+    color:green;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size:20px ;
+    
+    }
+    .Despesa{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         color: rgba(247, 12, 12, 0.856);
+         font-style:oblique;
+         font-size:20px ;
+         margin-left: 10px;
+         
+         
+    }
+    input{
+        width:50px;
+    }
+    header{
+        background-color: rgb(38, 156, 117);
+        text-align: center;
+        text-justify: distribute ;
+        height: 50px;
+        margin: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style:italic;
+        font-size:xx-large;
+        border-style:outset;
+        border-color: rgb(42, 130, 165);
+    }
+    body{
+        margin: 0;
+    }
+    #Uber{
+        margin-left: 68px;
+    }
+    #NossoSZ{
+        margin-left: 30px;
+    }
+    #Reserva{
+        margin-left: 63px;
+    }
+    #SobraPic{
+        margin-left: 16px;
+    }
+    #Psn{
+        margin-left: 30px;
+    }
+    #Extra{
+        margin-left: 5px;
+    }
+    
+
