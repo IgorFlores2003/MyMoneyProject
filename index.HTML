@@ -43,9 +43,9 @@ Reserva
 </div>
 
  
-<button onclick="soma()">Soma</button>
+<button onclick="soma()">Soma </button>
   </div>
-  <div  id="res"></div>
+ <div  id="res"> </div>
 </body>
 
 
@@ -80,19 +80,19 @@ Reserva
      nosso= parseFloat(nosso)
      reserva= parseFloat(reserva)
         var sominha=(Salario+Pic+Sobra+Mesada+Extra-bus-uber-facul-psn-extra-cartao-nosso-reserva);
-
+       var r="R$"
         
       if(sominha< 0){
-        alert(res.innerHTML="Cara, Eu não queria ser você (Seu Saldo é de):" + sominha.toPrecision(5))
-        sominha.toPrecision(5)
+        alert(res.innerHTML="Cara, Eu não queria ser você (Seu Saldo é de):" + r + sominha.toPrecision(5))
+        r + sominha.toPrecision(5)
       }
       else if(sominha == 0){
-       alert(res.innerHTML="Ufa, essa foi por pouco (Seu Saldo é de):" + sominha.toPrecision(5))
-        sominha.toPrecision(5)
+       alert(res.innerHTML="Ufa, essa foi por pouco (Seu Saldo é de):" +  r + sominha.toPrecision(5))
+       r + sominha.toPrecision(5)
       }
       else if(sominha>0){
-        alert(res.innerHTML="Sobrou Din, o Julius ficaria contente com isso  (Seu Saldo é de): " + sominha.toPrecision(5))
-        sominha.toPrecision(5)
+        alert(res.innerHTML="Sobrou Din, o Julius ficaria contente com isso  (Seu Saldo é de): " +  r +sominha.toPrecision(5))
+        r +   sominha.toPrecision(5)
       }
 
 }
