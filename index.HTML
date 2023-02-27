@@ -8,7 +8,7 @@
     <title>My Money</title>
 </head>
 <body>
-    <header>Controle do Dindin</header>
+    <header>Controle do Dindim</header>
   <div class="Receita">
   Salário
   <input id="Salario"value="0" >
@@ -30,7 +30,7 @@ Faculdade/PS5
   <input id="Facul" value="0" >
 PSN
   <input id="Psn" value="0" >
-Divida Extra
+Dívida Extra
   <input id="Extrad" value="0" >
 <br> Cartão
   <input id="Cartao" value="0" >
@@ -80,18 +80,18 @@ Reserva
      nosso= parseFloat(nosso)
      reserva= parseFloat(reserva)
         var sominha=(Salario+Pic+Sobra+Mesada+Extra-bus-uber-facul-psn-extra-cartao-nosso-reserva);
-       var r="R$"
+       
         
       if(sominha< 0){
-        alert(res.innerHTML="Cara, Eu não queria ser você (Seu Saldo é de):" + r + sominha.toPrecision(5))
+        alert(res.innerHTML="Cara, Eu não queria ser você (Seu Saldo é de): R$"  + sominha.toPrecision(5))
         r + sominha.toPrecision(5)
       }
       else if(sominha == 0){
-       alert(res.innerHTML="Ufa, essa foi por pouco (Seu Saldo é de):" +  r + sominha.toPrecision(5))
+       alert(res.innerHTML="Ufa, essa foi por pouco (Seu Saldo é de): R$"  + sominha.toPrecision(5))
        r + sominha.toPrecision(5)
       }
       else if(sominha>0){
-        alert(res.innerHTML="Sobrou Din, o Julius ficaria contente com isso  (Seu Saldo é de): " +  r +sominha.toPrecision(5))
+        alert(res.innerHTML="Sobrou Dindim, o Julius ficaria contente com isso  (Seu Saldo é de): R$"  +sominha.toPrecision(5))
         r +   sominha.toPrecision(5)
       }
 
