@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.CSS">
     <title>My Money</title>
 </head>
 <body>
     <header>Controle do Dindin</header>
-  <div>
+  <div class="Receita">
   Salário
-  <input id="Salario">
+  <input id="Salario"value="0" >
      Sobra Física
-  <input id="SobraFisi" >
+  <input id="SobraFisi" value="0" >
 Sobra PicPay
-  <input id="SobraPic" >
+  <input id="SobraPic" value="0" >
 Mesada
-  <input id="Mesada" >
+  <input id="Mesada" value="0" >
 Saldo Extra
-  <input id="Extra" >
+  <input id="Extra" value="0" >
 </div>
-  <div>
+  <div class="Despesa">
     Ônibus
-  <input id="Bus" >
+  <input id="Bus" value="0" >
 Uber
-  <input id="Uber" >
+  <input id="Uber" value="0" >
 Faculdade/PS5
-  <input id="Facul" >
+  <input id="Facul" value="0" >
 PSN
-  <input id="Psn" >
+  <input id="Psn" value="0" >
 Divida Extra
-  <input id="Extrad" >
+  <input id="Extrad" value="0" >
 <br> Cartão
-  <input id="Cartao" >
+  <input id="Cartao" value="0" >
 Nosso SZ
-  <input id="Nosso SZ" >
+  <input id="NossoSZ" value="0" >
 Reserva
-  <input id="Reserva" >
+  <input id="Reserva" value="0" >
 
 
 </div>
@@ -62,7 +63,7 @@ Reserva
     var psn= document.getElementById("Psn").value;
     var extra= document.getElementById("Extrad").value;
     var cartao= document.getElementById("Cartao").value;
-    var nosso= document.getElementById("Nosso SZ").value;
+    var nosso= document.getElementById("NossoSZ").value;
     var reserva= document.getElementById("Reserva").value;
     var res= document.getElementById("res")
     Salario=parseInt(Salario)
@@ -82,13 +83,16 @@ Reserva
 
         
       if(sominha< 0){
-        res.innerHTML="Cara, Eu não queria ser você (Seu Saldo é de):" + sominha.toPrecision(5)
+        alert(res.innerHTML="Cara, Eu não queria ser você (Seu Saldo é de):" + sominha.toPrecision(5))
+        sominha.toPrecision(5)
       }
       else if(sominha == 0){
-        res.innerHTML="Ufa, essa foi por pouco (Seu Saldo é de):" + sominha.toPrecision(5)
+       alert(res.innerHTML="Ufa, essa foi por pouco (Seu Saldo é de):" + sominha.toPrecision(5))
+        sominha.toPrecision(5)
       }
       else if(sominha>0){
-        res.innerHTML="Sobrou Din, o Julius ficaria contente com isso  (Seu Saldo é de): " + sominha.toPrecision(5)
+        alert(res.innerHTML="Sobrou Din, o Julius ficaria contente com isso  (Seu Saldo é de): " + sominha.toPrecision(5))
+        sominha.toPrecision(5)
       }
 
 }
